@@ -1,0 +1,12 @@
+{
+    "auto-close-tag.disableOnLanguage": [
+    
+    ],
+    "liveSassCompile.settings.formats":[
+        {
+            "savePath": "/dist/css"
+        }
+    ],
+    "vue3snippets.enable-compile-vue-file-on-did-save-code": false,
+    "liveServer.settings.port": 5501,
+}

@@ -1,0 +1,283 @@
+html,
+body {
+    width: 100%;
+    position: relative;
+    margin: 0 auto;
+    padding: 0;
+    display: block;
+}
+
+body {
+    background-image: url(../../images/pc-bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    overflow: hidden;
+}
+
+// audio {
+//     display: none;
+// }
+
+.wrap {
+    width: 100%;
+    position: relative;
+    margin: 0 auto;
+    padding: 0;
+    display: block;
+    max-width: 640px;
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.7);
+
+    // overflow: hidden;
+    &::after {
+        content: "";
+        background-image: url(../../images/border.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        display: block;
+        width: 2px;
+        height: 100%;
+        position: absolute;
+        right: 0%;
+        transform: translateX(100%);
+        top: 0;
+        z-index: 10;
+    }
+
+    &::before {
+        content: "";
+        background-image: url(../../images/border.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        display: block;
+        width: 2px;
+        height: 100%;
+        position: absolute;
+        left: 0%;
+        transform: translateX(-100%);
+        top: 0;
+        z-index: 10;
+    }
+}
+
+.rule {
+    position: fixed;
+    top: 91px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    max-width: 640px;
+    height: calc(100vh - 91px);
+    z-index: 100;
+    background-image: url(../../images/popup-bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 30px 0;
+    display: none;
+
+    &__close {
+        position: absolute;
+        right: 30px;
+        top: 30px;
+        display: block;
+
+        span {
+            display: block;
+            position: relative;
+            background-color: #fff;
+            width: 33px;
+            height: 2px;
+            margin-bottom: 10px;
+            transition: all 0.3s;
+
+            &:nth-child(2) {
+                width: 26px;
+            }
+
+            &:nth-child(3) {
+                width: 13px;
+            }
+        }
+
+        &--active {
+            span {
+                transform-origin: left center;
+
+                &:nth-child(1) {
+                    width: 33px;
+                    transform: rotate(45deg);
+                }
+
+                &:nth-child(2) {
+                    width: 33px;
+                    opacity: 0;
+                }
+
+                &:nth-child(3) {
+                    width: 33px;
+                    transform: rotate(-45deg);
+                }
+            }
+        }
+    }
+
+    &__content {
+        width: 100%;
+        height: calc(100% - 30px);
+        padding-bottom: 50px;
+        overflow-y: auto;
+
+        &::-webkit-scrollbar {
+            width: 1px;
+        }
+    }
+
+    h2 {
+        font-size: 33px;
+        color: #c2c2c2;
+        font-family: 'Noto Serif TC', serif;
+        text-align: center;
+        transform-origin: center;
+        transform: scaleX(0.8);
+        letter-spacing: 5px;
+        white-space: nowrap;
+        font-weight: 400;
+        line-height: 1.5;
+    }
+
+    ul {
+        list-style: none;
+        position: relative;
+        margin-left: 1em;
+
+        li {
+            position: relative;
+        }
+
+        li::before {
+            position: absolute;
+            left: 37px;
+            top: 0.9em;
+            border-radius: 50%;
+            content: "";
+            display: block;
+            width: 10px;
+            height: 10px;
+            background-color: #c2c2c2;
+        }
+
+        .title {
+            font-size: 24px;
+            color: #c2c2c2;
+            font-family: 'Noto Serif TC', serif;
+            text-align: left;
+            transform-origin: center;
+            transform: scaleX(0.8);
+            letter-spacing: 5px;
+            white-space: nowrap;
+            font-weight: 400;
+            margin: 15px 0;
+        }
+
+        p {
+            font-size: 18px;
+            color: #c2c2c2;
+            font-family: 'Noto Serif TC', serif;
+            text-align: justify;
+            transform-origin: center;
+            transform: scaleX(0.8);
+            letter-spacing: 5px;
+            font-weight: 400;
+            line-height: 1.5;
+        }
+
+        a {
+            font-size: 18px;
+            color: #c2c2c2;
+            font-family: 'Noto Serif TC', serif;
+            text-align: left;
+            transform-origin: center;
+            transform: scaleX(0.8);
+            letter-spacing: 5px;
+            font-weight: 400;
+            line-height: 1.5;
+            display: inline;
+            word-break: break-all;
+            text-decoration: underline;
+        }
+    }
+
+    .ol {
+        margin-left: 2em;
+
+        li::before {
+            position: absolute;
+            left: 35px;
+            top: 0.4em;
+            content: "1";
+            display: block;
+            color: #c2c2c2;
+            background: none;
+            border-radius: 0;
+            width: auto;
+            height: auto;
+        }
+
+        li {
+            position: relative;
+
+            @for $i from 1 through 30 {
+                &:nth-child(#{$i}) {
+                    &::before {
+                        content: "#{$i}.";
+                    }
+                }
+            }
+        }
+
+
+        .title {
+            font-size: 18px;
+            color: #c2c2c2;
+            font-family: 'Noto Serif TC', serif;
+            text-align: left;
+            transform-origin: center;
+            transform: scaleX(0.8);
+            letter-spacing: 5px;
+            font-weight: 400;
+            margin: 15px 0;
+            white-space: normal;
+        }
+
+        p {
+            font-size: 18px;
+            color: #c2c2c2;
+            font-family: 'Noto Serif TC', serif;
+            text-align: justify;
+            transform-origin: center;
+            transform: scaleX(0.8);
+            letter-spacing: 5px;
+            font-weight: 400;
+            line-height: 1.5;
+        }
+
+        a {
+            font-size: 18px;
+            color: #c2c2c2;
+            font-family: 'Noto Serif TC', serif;
+            text-align: left;
+            transform-origin: center;
+            transform: scaleX(0.8);
+            letter-spacing: 5px;
+            font-weight: 400;
+            line-height: 1.5;
+            display: inline;
+            word-break: break-all;
+            text-decoration: underline;
+        }
+    }
+}

@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=640, user-scalable=no">
+    <!-- <meta name="viewport" content="width=640 ,user-scalable=no"> -->
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- Meta -->
+    <meta name="description" content="玩就抽100名送超美味鱈蟹柳到你家">
+    <meta name="keywords" content="川見, 鱈蟹柳">
+    <meta property="og:title" content="即刻踏上川見療癒食刻之旅">
+    <meta property="og:url" content="https://www.cheerfoodscampaign.com.tw">
+    <meta property="og:image" content="https://www.cheerfoodscampaign.com.tw/images/share/share_1.jpg">
+    <meta property="og:description" content="玩就抽100名送超美味鱈蟹柳到你家">
+    <meta property="og:type" content="website" />
+
+    <title>川見鱈蟹柳</title>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&family=Noto+Serif+TC:wght@200;300;400;500;600;700;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="dist/css/all.css?v=2">
+
+    <!-- Favicon.ico -->
+    <link href="" rel="shortcut icon" />
+    <!-- <script src="https://cdn.jsdelivr.net/npm/vconsole@3.2.0/dist/vconsole.min.js"></script>
+    <script>
+        var vConsole = new VConsole();
+    </script> -->
+    <!-- GA -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-177542877-1"></script>
+</head>
+
+<body>
+    <div class="alertPop">
+        <div class="alertPop__content">
+            <p>即刻踏上療癒旅程
+                <br>看到最後還有驚喜大禮等著你</p>
+                <a data-category="start" data-ga="start_go" href="javascript:void(0)">開始體驗</a>
+        </div>
+    </div>
+    <div class="wrap">
+        <div class="header">
+            <a class="header__menu" href="javascript:void(0)">
+                <span></span>
+                <span></span>
+                <span></span>
+            </a>
+        </div>
+        <div class="menu">
+            <ul>
+                <li><a data-category="menu" data-ga="menu_index" href="index.html"><span>療癒食刻之旅</span></a></li>
+                <li><a data-category="menu" data-ga="menu_product" href="product.html"><span>產品介紹</span></a></li>
+                <!-- <li><a data-category="menu" data-ga="menu_video"
+                        href="https://www.youtube.com/watch?v=rt_sSSEtXzA"><span>看影片</span></a></li> -->
+                <li><a data-category="menu" data-ga="menu_officialsite"
+                        href="http://www.cheerfoods.com.tw/index.html"><span>川見官網</span></a></li>
+            </ul>
+        </div>
+        <div class="main">
+            <section class="main__section d-flex align-items-center justify-content-center" id="section__0">
+                <div class="main__video">
+                    <video autoplay loop muted playsinline id="video">
+                        <source type="video/mp4" src="images/main_video.mp4">
+                        </source>
+                    </video>
+                </div>
+                <div class="main__bg"></div>
+                <div class="main__content d-flex align-items-center flex-column">
+                    <img class="show" src="images/main.png" alt="">
+                    <h1 class="show-1">甘鮮甜美源自何方？<br>
+                        跟著川見鱈蟹柳沉浸感官的世界
+                    </h1>
+                        <a class="show-2" href="#section__4"><img src="images/scroll.png" alt=""></a>
+                </div>
+            </section>
+            <section class="main__section d-flex align-items-center justify-content-center" id="section__4">
+                <div class="main__bg"></div>
+                <div class="main__content d-flex align-items-center flex-column">
+                    <div class="title d-flex justify-content-center align-items-center show">
+                        <div class="single">
+                            <img src="images/circle1.png" alt="">
+                            <span>旨</span>
+                        </div>
+                        <h2>開啟聲音，轉動螢幕<br>
+                            聽聽看<br>
+                            被療到了嗎？</h2>
+                            <!-- <iframe src="sound.mp3" allow="autoplay" style="display:none" id="iframeAudio">
+                            </iframe>  -->
+                            <audio id="audio" autoplay>
+                                <source src="sound.ogg" type="audio/ogg">
+                                <source src="sound.mp3" type="audio/mpeg">
+                            </audio>
+                            <a class="soundTrigger soundTrigger--off" href="javascript:void(0)">
+                                <img class="on" src="images/soundOff.png" alt="">
+                                <img class="off" src="images/soundOn.png" alt="">
+                            </a>
+                    </div>
+                </div>
+            </section>
+            <section class="main__section" id="section__1">
+                <div class="main__video1">
+                    <video autoplay loop muted playsinline id="video1">
+                        <source type="video/mp4" src="images/step2-video.mp4">
+                        </source>
+                    </video>
+                </div>
+                <div class="main__bg"></div>
+                <div class="main__content main__full d-flex justify-content-center flex-column">
+                    <div class="title d-flex justify-content-center align-items-center show">
+                        <div class="single">
+                            <img src="images/circle.png" alt="">
+                            <span>味</span>
+                        </div>
+                        <h2>看看秀色可餐的景象<br>
+                            搭上飽滿的野生飛魚卵<br>
+                            被療到了嗎？</h2>
+                    </div>
+                    <p class="mt-auto">圖片僅供參考，內容物以實際產品為準</p>
+                </div>
+            </section>
+            <section class="main__section" id="section__2">
+                <div class="main__bg"></div>
+                <div class="main__content main__full d-flex flex-column">
+                    <div class="title d-flex justify-content-center align-items-center show">
+                        <div class="single">
+                            <img src="images/circle.png" alt="">
+                            <span>饞</span>
+                        </div>
+                        <h2>感受一下奔放的Q彈<br>點點看，被療到了嗎？</h2>
+                    </div>
+                    <div class="main__control show-1">
+                        <div class="rotate">
+                            <div class="array">
+                                <div class="column" data-index="0">
+                                    <img class="box" src="images/inactive.png" alt="">
+                                    <div class="loop"></div>
+                                </div>
+                            </div>
+                            <div class="array--2">
+                                <div class="column" data-index="1">
+                                    <img class="box" src="images/inactive.png" alt="">
+                                    <div class="loop"></div>
+                                </div>
+                                <div class="column" data-index="2">
+                                    <img class="box" src="images/inactive.png" alt="">
+                                    <div class="loop"></div>
+                                </div>
+                                <div class="column" data-index="3">
+                                    <img class="box" src="images/inactive.png" alt="">
+                                    <div class="loop"></div>
+                                </div>
+                            </div>
+                            <div class="array">
+                                <div class="column" data-index="4">
+                                    <img class="box" src="images/inactive.png" alt="">
+                                    <div class="loop"></div>
+                                </div>
+                                <div class="column" data-index="5">
+                                    <img class="box" src="images/inactive.png" alt="">
+                                    <div class="loop"></div>
+                                </div>
+                                <div class="column" data-index="6">
+                                    <img class="box" src="images/inactive.png" alt="">
+                                    <div class="loop"></div>
+                                </div>
+                            </div>
+                            <div class="array--2">
+                                <div class="column" data-index="7">
+                                    <img class="box" src="images/inactive.png" alt="">
+                                    <div class="loop"></div>
+                                </div>
+                                <div class="column" data-index="8">
+                                    <img class="box" src="images/inactive.png" alt="">
+                                    <div class="loop"></div>
+                                </div>
+                                <div class="column" data-index="9">
+                                    <img class="box" src="images/inactive.png" alt="">
+                                    <div class="loop"></div>
+                                </div>
+                            </div>
+                            <div class="array">
+                                <div class="column" data-index="10">
+                                    <img class="box" src="images/inactive.png" alt="">
+                                    <div class="loop"></div>
+                                </div>
+                                <div class="column" data-index="11">
+                                    <img class="box" src="images/inactive.png" alt="">
+                                    <div class="loop"></div>
+                                </div>
+                                <div class="column" data-index="12">
+                                    <img class="box" src="images/inactive.png" alt="">
+                                    <div class="loop"></div>
+                                </div>
+                            </div>
+                            <div class="array--2">
+                                <div class="column" data-index="13">
+                                    <img class="box" src="images/inactive.png" alt="">
+                                    <div class="loop"></div>
+                                </div>
+                                <div class="column" data-index="14">
+                                    <img class="box" src="images/inactive.png" alt="">
+                                    <div class="loop"></div>
+                                </div>
+                                <div class="column" data-index="15">
+                                    <img class="box" src="images/inactive.png" alt="">
+                                    <div class="loop"></div>
+                                </div>
+                            </div>
+                            <div class="array">
+                                <div class="column" data-index="16">
+                                    <img class="box" src="images/inactive.png" alt="">
+                                    <div class="loop"></div>
+                                </div>
+                                <div class="column" data-index="17">
+                                    <img class="box" src="images/inactive.png" alt="">
+                                    <div class="loop"></div>
+                                </div>
+                                <div class="column" data-index="18">
+                                    <img class="box" src="images/inactive.png" alt="">
+                                    <div class="loop"></div>
+                                </div>
+                            </div>
+                            <div class="array--2">
+                                <div class="column" data-index="19">
+                                    <img class="box" src="images/inactive.png" alt="">
+                                    <div class="loop"></div>
+                                </div>
+                                <div class="column" data-index="20">
+                                    <img class="box" src="images/inactive.png" alt="">
+                                    <div class="loop"></div>
+                                </div>
+                                <div class="column" data-index="21">
+                                    <img class="box" src="images/inactive.png" alt="">
+                                    <div class="loop"></div>
+                                </div>
+                            </div>
+                            <div class="array">
+                                <div class="column" data-index="22">
+                                    <img class="box" src="images/inactive.png" alt="">
+                                    <div class="loop"></div>
+                                </div>
+                                <div class="column" data-index="23">
+                                    <img class="box" src="images/inactive.png" alt="">
+                                    <div class="loop"></div>
+                                </div>
+                                <div class="column" data-index="24">
+                                    <img class="box" src="images/inactive.png" alt="">
+                                    <div class="loop"></div>
+                                </div>
+                            </div>
+                            <div class="array--2">
+                                <div class="column" data-index="25">
+                                    <img class="box" src="images/inactive.png" alt="">
+                                    <div class="loop"></div>
+                                </div>
+                                <div class="column" data-index="26">
+                                    <img class="box" src="images/inactive.png" alt="">
+                                    <div class="loop"></div>
+                                </div>
+                                <div class="column" data-index="27">
+                                    <img class="box" src="images/inactive.png" alt="">
+                                    <div class="loop"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="main__section" id="section__3">
+                <div class="main__bg"></div>
+                <div class="main__content main__full d-flex flex-column justify-content-start">
+                    <div class="title d-flex justify-content-center align-items-center flex-column">
+                        <div class="single show">
+                            <img src="images/circle.png" alt="">
+                            <span>饗</span>
+                        </div>
+                        <h2 class="show">選選哪道料理最療你的味蕾？<br>
+                            揪好友走進超商，手刀上桌</h2>
+                            <a class="btn show-1" id="setStop" href="javascript:void(0)">
+                                <span>點擊選菜</span>
+                            </a>
+                    </div>
+                    <div class="slider">
+                        <div class="random">
+                        </div>
+                        <div class="slider__content swiper-container">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide"><img src="images/meal-0.png" alt=""></div>
+                                <div class="swiper-slide"><img src="images/meal-1.png" alt=""></div>
+                                <div class="swiper-slide"><img src="images/meal-2.png" alt=""></div>
+                                <div class="swiper-slide"><img src="images/meal-3.png" alt=""></div>
+                            </div>
+                            <div class="swiper-pagination"></div>
+                        </div>
+                    </div>
+                    <img class="slider__bg" src="images/table.png" alt="">
+                    <img class="discount" src="images/discount.png" alt="">
+                </div>
+            </section>
+        </div>
+        <div class="popup">
+            <div class="popup__content">
+                <h2 class="title">手刀填資料抽獎<br>就抽百位幸運兒送鱈蟹柳到你家！</h2>
+                    <form class="form">
+                        <div class="form__column">
+                            <label for="name">姓名</label>
+                            <input type="text" name="name" id="name">
+                        </div>
+                        <div class="form__column">
+                            <label for="phone">電話</label>
+                            <input type="tel" name="phone" id="phone">
+                        </div>
+                        <div class="form__column">
+                            <label for="address">地址</label>
+                            <div class="form__inline">
+                                <select name="city" id="city">
+                                    <option value="">縣/市</option>
+                                </select>
+                                <select name="area" id="area">
+                                    <option value="">地區</option>
+                                </select>
+                                <input type="text" name="address" id="address">
+                            </div>
+                        </div>
+                        <div class="form__column">
+                            <label for="name">Email</label>
+                            <input type="email" name="email" id="email">
+                        </div>
+                        <div class="form__column">
+                            <div class="form__check">
+                                <input type="checkbox" value="" id="agree" name="agree" />
+                                <label for="agree"></label>
+                                <p>我已閱讀並同意<a class="openRule" href="javascript:void(0)">活動辦法隱私權條款</a></p>
+                            </div>
+                        </div>
+                        <a class="send" data-category="personalinfo" data-ga="personalinfo_share"
+                            href="javascript:void(0)">
+                            <span>送出資料並分享料理給好友</span>
+                        </a>
+                    </form>
+                    <div id="player">
+                    </div>
+            </div>
+        </div>
+        <div class="rule">
+            <a class="rule__close rule__close--active"
+                href="javascript:void(0)"><span></span><span></span><span></span></a>
+            <div class="rule__content">
+                <h2 class="title">川見鱈蟹柳<br>活動辦法</h2>
+                    <ul>
+                        <li>
+                            <p class="title">活動時間：</p>
+                            <p>2020/9/14至2020/10/26</p>
+                        </li>
+                        <li>
+                            <p class="title">活動內容：</p>
+                            <p>川見鱈蟹柳抽獎活動</p>
+                        </li>
+                        <li>
+                            <p class="title">抽獎辦法：</p>
+                            <p>活動期間內，於本活動填寫個人資料後，並分享在Facebook個人塗鴨牆(設定公開顯示)，品牌將抽出100人贈送1箱 (含30包) 川見鱈蟹柳。</p>
+                        </li>
+                        <li>
+                            <p class="title">得獎名單：</p>
+                            <p>於2020/10/30於本活動網站及「川見Cheer Foods」粉絲專頁 (<a target="_blank"
+                                    href="https://www.facebook.com/cheerfoods.tw/">https://www.facebook.com/cheerfoods.tw/</a>) 同步公告。
+                            </p>
+                        </li>
+                        <li>
+                            <p class="title">注意事項：</p>
+                            <ul class="num ol">
+                                <li>
+                                    <p>如有任何因電腦、網路、技術或不可歸責於活動相關單位之事由，而使活動參與者上傳或登錄有延遲、遺失、錯誤、無法辨識或毀損情況，主辦/活動單位不負任何責任。本活動僅限於設籍於台灣、金門、澎湖、馬祖地區者參加。所有參加本活動者於提供個人資料後，視為同意活動單位得將其個人資料於本活動目的範圍內蒐集、處理暨使用之。活動單位僅使用參與者所提供之個人資料於本次活動用途，且遵守【個人資料保護法】相關規定，以維護權益。得獎者授權主辦/活動單位公開公佈姓名。</p>
+                                </li>
+                                <li>
+                                    <p>本活動如有未盡事宜，主辦單位佳福股份有限公司擁有保留、修改、暫停及解釋活動內容之權利，更新訊息將於活動網站上公佈，不另行通知。</p>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <p class="title">得獎注意事項：</p>
+                            <ul class="num ol">
+                                <li>
+                                    <p>得獎者若因個人因素或未依規定詳實填寫個人資料，導致得獎者於中獎名單公布後二週內無法聯繫上者，視同放棄得獎權利。</p>
+                                </li>
+                                <li>
+                                    <p>得獎名單公布後由活動單位以參與者電話或E-mail通知，得獎者應依通知說明完成領獎相關手續，逾期將視為放棄得獎資格，若因地址遷移或資料不全而導致獎品退回、冒領、遺失者，恕不另行補發。</p>
+                                </li>
+                                <li>
+                                    <p>得獎者所提供證明文件若有不全、錯誤、造假，或未在活動單位指定時間內提出相關證件文件，得獎者應自負相關法律責任，主辦單位除撤銷其得獎資格外並可追回已頒發獎品。</p>
+                                </li>
+                                <li>
+                                    <p>活動單位將會以E-mail寄出相關領獎文件之電子檔，得獎者須於期限內寄回領獎須備之文件：(1)身分證正反面影本、(2)領獎通知書。得獎者須於指定時間內完成領獎及簽署著作權轉讓同意書，未依領獎通知書上規定的截止時間內回傳領獎文件並完成手續者，視為放棄得獎資格。</p>
+                                </li>
+                                <li>
+                                    <p>本活動之所有獎項，皆以實物為準，得奬者亦不得要求獎項更換、轉讓或折換現金，獎項為客製化贈品不可販售。所有獎項日後之使用與維修，主辦單位概不負責。如遇不可抗拒之因素評選活動無法如期、如實進行時，活動主辦單位保有隨時修改及取消本活動之權利，恕不另行補辦評選活動。</p>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <p class="title">個人資料使用聲明：</p>
+                            <ul class="text ol">
+                                <li>
+                                    <p class="title">告知事項：</p>
+                                    <ul class="num ol">
+                                        <li>
+                                            <p>蒐集個人資料公司：佳福股份有限公司（簡稱主辦單位）、紅坊創意股份有限公司（簡稱活動單位）</p>
+                                        </li>
+                                        <li>
+                                            <p>蒐集之目的：行銷或促銷活動。</p>
+                                        </li>
+                                        <li>
+                                            <p>個人資料之類別：個人資料之姓名、電話、地址、電子信箱。</p>
+                                        </li>
+                                        <li>
+                                            <p>個人資料利用之期間：自台端參加2020年9月14日至2020年10月14日活動結束後兩個月。</p>
+                                        </li>
+                                        <li>
+                                            <p>個人資料利用之地區：活動單位營運範圍，僅限於台灣、金門、澎湖、馬祖等地區利用，且不會移轉至其他境外地區利用。</p>
+                                        </li>
+                                        <li>
+                                            <p>個人資料利用之對象及方式：由活動單位該業務承辦人員於辦理該活動之特定目的必要範圍內，依通常作業所必要之方式利用此個人資料。</p>
+                                        </li>
+                                        <li>
+                                            <p>依個人資料保護法第三條規定台端得行使之權利及方式：台端得向奧美公共關係顧問股份有限公司，以查詢、閱覽、製給複製本；或補充／更正、請求停止蒐集、處理、利用或刪除個人資料內容之一部或全部。（註：參加人申請查詢、閱覽、製給複製本時，將酌收必要成本費用。）
+                                            </p>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <p class="title">
+                                        台端填寫個人資料後，以任何方式遞送至活動單位收執時，均視為台端已同意其所填寫之個人資料，供活動單位於辦理川見鱈蟹柳網路活動之特定目的必要範圍內處理及利用；此外，台端可自行決定是否填寫相關之個人資料欄位，若台端選擇不願填寫，將無法參加本次活動所提供之相關服務。
+                                    </p>
+                                </li>
+                                <li>
+                                    <p class="title">個人資料安全措施：活動單位將依據相關法令之規定建構完善措施，保障台端個人資料之安全。</p>
+                                </li>
+                                <li>
+                                    <p class="title">針對本活動有任何疑問，請聯繫活動單位之活動服務信箱：<a
+                                            href="mailto:claireyl.chen@ogilvy.com">claireyl.chen@ogilvy.com</a>。</p>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+            </div>
+        </div>
+
+    </div>
+    <!-- Library -->
+    <script src="dist/lib/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.0.2/gsap.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <!-- Script -->
+    <!-- <script src="dist/script.js"></script> -->
+    <script src="src/js/default/default.js"></script>
+    <script src="src/js/default/scrollreveal.js"></script>
+    <script src="src/js/default/ga.js"></script>
+    <script src="src/js/layout/area.js"></script>
+    <script src="src/js/layout/index.js"></script>
+    <script src="src/js/layout/form.js"></script>
+    <script src="src/js/layout/deviceOri.js"></script>
+    <script src="src/js/layout/pageListen.js"></script>
+    <!-- <script src="src/js/default/youtube_iframe.js"></script> -->
+    <script>var pageSet = false;</script>
+    <script>
+        var tag = document.createElement('script');
+  
+        tag.src = "https://www.youtube.com/iframe_api";
+        var firstScriptTag = document.getElementsByTagName('script')[0];
+        firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+  
+        var player;
+        function onYouTubeIframeAPIReady() {
+          player = new YT.Player('player', {
+            height: '341',
+            width: '540',
+            videoId: 'rt_sSSEtXzA',
+            events: {
+              'onReady': onPlayerReady,
+              'onStateChange': onPlayerStateChange
+            }
+          });
+        }
+  
+        function onPlayerReady(event) {
+        //   alert("Video Ready!");
+        //   event.target.playVideo(); // You can omit this to prevent the video starting as soon as it loads.
+        }
+  
+        var done = false;
+        function onPlayerStateChange(event) {
+          if (event.data == YT.PlayerState.PLAYING && !done) {
+            setGA.ButtonClick("personalinfo", "personalinfo_video")
+          }
+        }
+        // function stopVideo() {
+        //   player.stopVideo();
+        // }
+      </script>
+</body>
+
+</html>
